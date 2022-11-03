@@ -1,0 +1,232 @@
+/*!
+ * Template Name/Project Name: XYZ
+ * Developer Name: Mr ABC
+ * Conatct: abc@gmail.com
+ * Visit: https://abc.info
+ */
+ /* common code start */
+ @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+ *{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+a,a:hover{
+    text-decoration: none;
+}
+ul,ol{
+    list-style-type: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+    line-height: 0.8;
+    margin: 0;
+    padding: 0;
+}
+ :root{
+    --brand-color: #87d37c;
+    --white-color: #fff;
+    --black-color: #2d3950;
+ }
+ .text-uppercase{
+    text-transform: uppercase;
+ }
+ /* common code end */
+ /* header start */
+ header{
+    background: #fcdb00;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+ .navbar{
+    background: #fcdb00;
+ }
+.navbar-nav .nav-item .nav-link{
+    color: #010101;
+    font-weight: 400;
+    font-size: 22px;
+    position: relative;
+}
+.default_nav_active::after {
+    width: 100% !important;
+}
+.default_nav_active{
+    color: #010101 !important;
+}
+.navbar-nav .nav-item .nav-link::after {
+    width: 0%;
+    height: 2px;
+    background: #010101;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    content: " ";
+    transition: .5s;
+}
+.navbar-nav .nav-item .nav-link:hover{
+    color: #010101;
+}
+.navbar-nav .nav-item .nav-link:hover::after{
+    width: 100%;
+}
+
+/* carousel start */
+.carousel{
+    padding: 90px;
+}
+.yo h3{
+   padding-top: 80px;
+   color: #010101;
+   font-weight: bold;
+   font-size: 32px;
+}
+.yo p{
+   padding: 30px 0px 30px 0px;
+   width: 330px;
+   font-size: 20px;
+   line-height: 24px;
+   color: #313841;
+}
+.yo h5{
+   width: 480px;
+   font-size: 16px;
+   line-height: 20px;
+   color: #555555;
+   padding-bottom: 30px;
+}
+.iifffcon{
+   padding: 0px 10px;
+}
+.iicon a i{
+   font-size: 32px;
+   color: #010101;
+   
+}
+.iicon a i:hover {
+	color: #fff;
+}
+.carousel-indicators [data-bs-target] {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+.carousel-indicators {
+    margin-bottom: 1rem;
+}
+/* carousel end */
+/* fetures start */
+.feature{
+    padding: 100px 0px 150px 0px;
+}
+.feature-upper-part h3{
+    font-size: 32px;
+   color: #010101;
+   font-weight: 700;
+}
+.feature-upper-part p{
+    font-size: 20px;
+   color: #313841;
+   font-weight: 400;
+   line-height: 24px;
+   width: 70%;
+   margin: 0px auto;
+   padding: 20px 0px;
+}
+.feature-upper-part{
+    padding-bottom: 50px;
+}
+.feature-part-item{
+    background: transparent;
+    padding: 50px 0px 50px 0px;
+    transition: .4s;
+    box-shadow: 0px 10px 20px rgba(40, 40, 40);
+}
+.feature-part-item:hover {
+    background: #2d3950;
+    transition: .4s all;
+    box-shadow: 0px 10px 20px rgba(40, 40, 40);
+}
+.feature-part-item:hover .feature-part-icon i{
+    color: #fff;
+}
+.feature-part-item:hover .feature-part-content h4{
+    color: #fff;
+}
+.feature-part-item:hover .feature-part-content p{
+    color: #fff;
+}
+.feature-part-item .feature-part-icon i{
+    font-size: 50px;
+    color: #010101;
+    transition: .4s all;
+}
+.feature-part-item .feature-part-content h4{
+    font-size: 22px;
+    color: #010101;
+    font-weight: 700;
+    padding-bottom: 15px;
+    transition: .4s all;
+}
+.feature-part-item .feature-part-content p{
+    font-size: 16px;
+    line-height: 20px;
+    color: #898989;
+    font-weight: 400;
+    transition: .4s all;
+}
+/* fetures end */
+ /* nav code end */
+ /* header end */
+ /* footer start */
+.contact{
+	background: #111;
+    padding: 80px 0px 100px 0px;
+}
+#cont-h3{
+    color: #fcdb00;
+}
+.input-group .btn{
+    padding: 10px 20px;
+    background: #fcdb00;
+}
+.input-group .btn:hover{
+    padding: 10px 20px;
+    background: #555555;
+    color: #fff;
+}
+.input-group .form-control{
+    margin-right: 20px;
+}
+.contact-btn a{
+    padding: 5px 0px 10px 0px;
+    background: #fcdb00;
+    margin-right: 10px;
+    transition: .4s;
+    color: #010101;
+    box-shadow: 0px 10px 20px rgba(40, 40, 40);
+}
+.contact-btn a i{
+    font-size: 42px;
+}
+.contact-btn a:hover{
+    color: #111;
+    background: #fff;
+    box-shadow: 0px 10px 20px rgba(40, 40, 40);
+}
+/*  */
+/* footer start */
+.footerr{
+    background: #010101;
+}
+.foot-part a {
+    color: #fff;
+    font-size: 16px;
+}
+.bannerr{
+    padding: 50px 0px 100px 0px;
+    background: #fcdb00;
+    font-size: 70px;
+    font-weight: 700;
+}
